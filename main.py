@@ -4,6 +4,7 @@ import json
 from datetime import datetime
 import requests
 import os
+import jishaku
 from discord.ext import commands
 
 import keep_alive
@@ -15,6 +16,8 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='.', intents=intents)
 bot.remove_command('help')
+bot.owner_id = 847770840266833961
+bot.load_extension("jishaku")
 
 
 @bot.event
