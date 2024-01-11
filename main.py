@@ -52,7 +52,11 @@ async def find_inviter(member):
       return entry.user
   return None
 
-
+@bot.command()
+async def ping(ctx):
+    latency = round(bot.latency * 1000)  # Latency in milliseconds
+    await ctx.send(f"Pong! Latency: {latency}ms")
+  
 #### C O N F I G ####
 
 ADMIN = 1194951841046347787  #EXECUTIVE ROLE
