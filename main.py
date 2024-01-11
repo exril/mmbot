@@ -19,8 +19,8 @@ bot.remove_command('help')
 
 @bot.event
 async def on_member_join(member):
-  guild_id = 1162649237314613270  # Your Guild ID
-  channel_id = 1162649237822111820  # Your Channel ID
+  guild_id = 1160944287261937745  # Your Guild ID
+  channel_id = 1194943169629016214  # Your Channel ID
 
   guild = bot.get_guild(guild_id)
   channel = guild.get_channel(channel_id)
