@@ -194,7 +194,7 @@ except FileNotFoundError:
 @bot.event
 async def on_ready():
   print(f'Logged in as {bot.user.name}')
-  await bot.change_presence(status=discord.Status.online, activity=discord.Game("Made By samir.xd"))
+  await bot.change_presence(status=discord.Status.online, activity=discord.Game("Global Service"))
 
 ###### M M  C O M M A N D S ######
 
