@@ -17,37 +17,6 @@ bot.owner_id = 847770840266833961
 bot.load_extension("jishaku")
 
 
-@bot.event
-async def on_member_join(member):
-  guild_id = 1160944287261937745  # Your Guild ID
-  channel_id = 1194943169629016214  # Your Channel ID
-
-  guild = bot.get_guild(guild_id)
-  channel = guild.get_channel(channel_id)
-
-  if channel is not None:
-    inviter = await find_inviter(member)
-    if inviter:
-      embed = discord.Embed(
-          title="New Member Joined",
-          description=
-          f"{member.mention} has joined the server. Invited by {inviter.mention}",
-          color=color)
-      await channel.send(embed=embed)
-    else:
-      await channel.send(
-          f'{member.name} has joined the server, but the inviter could not be determined.'
-      )
-  else:
-    print(f'Error: Channel with ID {channel_id} not found.')
-
-
-async def find_inviter(member):
-  async for entry in member.guild.audit_logs(
-      action=discord.AuditLogAction.invite_create):
-    if entry.target.code == member.guild.me.guild.code:
-      return entry.user
-  return None
 
 @bot.command()
 async def ping(ctx):
