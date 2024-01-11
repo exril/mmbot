@@ -827,5 +827,5 @@ async def on_message(message):
 
 
 # Start the bot
-TOKEN = os.environ['TOKEN']
+TOKEN = 'MTE5NDg5MTYxMTEzMDMwNjU4MA.G1g61i.6dccVFw1O8jaWmR65P87Dxqq4P5MCc_hboCEM0'
 bot.run(TOKEN)
