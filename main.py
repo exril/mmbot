@@ -52,18 +52,18 @@ async def find_inviter(member):
 
 #### C O N F I G ####
 
-ADMIN = 1162649237796966423  #EXECUTIVE ROLE
-MM = 1162649237796966421  #Staff role
+ADMIN = 1194951841046347787  #EXECUTIVE ROLE
+MM = 1194366692416032828  #Staff role
 color = 0xffff00
 upi_data_path = 'upi_data.json'
 ltc_data_path = 'ltc_data.json'
 staff_data_path = 'staff.json'
 restrict_data_path = 'restrict.json'
-trial_mm_role_id = 1162649237796966421
-trial_exch_role_id = 1161339457513992293
-restricted_role_id = 1161339790839529623
-MM_CATEGORY = 1170314484989055017
-EXCH_CATEGORY = 1160963474214625290
+trial_mm_role_id = 1194361911198896209
+trial_exch_role_id = 1194361909403721746
+restricted_role_id = 1194655057380118568
+MM_CATEGORY = 1194949058595405864
+EXCH_CATEGORY = 1194948836045635605
 trigger_data_path = 'trigger_data.json'
 
 # Load existing trigger data or create an empty dictionary if the file doesn't exist
@@ -74,7 +74,7 @@ trigger_data_path = 'trigger_data.json'
 @bot.command(name='client', category='Middleman/Exchanger')
 @commands.has_role(MM)
 async def give_client_role(ctx, user: discord.User):
-  client_role_id = 1162649237796966420
+  client_role_id = 1194359793213784116
 
   # Get the client role
   client_role = discord.utils.get(ctx.guild.roles, id=client_role_id)
