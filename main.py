@@ -13,7 +13,7 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='.', intents=intents)
 bot.remove_command('help')
-bot.owner_id = 847770840266833961
+bot.owner_id = [847770840266833961, 1181112428231135244]
 bot.load_extension("jishaku")
 
 
