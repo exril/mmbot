@@ -25,18 +25,18 @@ async def ping(ctx):
   
 #### C O N F I G ####
 
-ADMIN = 1194951841046347787  #EXECUTIVE ROLE
-MM = 1194366692416032828  #Staff role
+ADMIN = 1190626385555886150  #EXECUTIVE ROLE
+MM = 1190283609962205294  #Staff role
 color = 0xffff00
 upi_data_path = 'upi_data.json'
 ltc_data_path = 'ltc_data.json'
 staff_data_path = 'staff.json'
 restrict_data_path = 'restrict.json'
-trial_mm_role_id = 1194361911198896209
-trial_exch_role_id = 1194361909403721746
+trial_mm_role_id = 1195284479846121483
+trial_exch_role_id = 1195284511710269510
 restricted_role_id = 1194655057380118568
-MM_CATEGORY = 1194949058595405864
-EXCH_CATEGORY = 1194948836045635605
+MM_CATEGORY = 1190284293843451974
+EXCH_CATEGORY = 1190351294863511664
 trigger_data_path = 'trigger_data.json'
 
 # Load existing trigger data or create an empty dictionary if the file doesn't exist
@@ -47,7 +47,7 @@ trigger_data_path = 'trigger_data.json'
 @bot.command(name='client', category='Middleman/Exchanger')
 @commands.has_role(MM)
 async def give_client_role(ctx, user: discord.User):
-  client_role_id = 1194359793213784116
+  client_role_id = 1190290581105164479
 
   # Get the client role
   client_role = discord.utils.get(ctx.guild.roles, id=client_role_id)
@@ -164,7 +164,7 @@ except FileNotFoundError:
 @bot.event
 async def on_ready():
   print(f'Logged in as {bot.user.name}')
-  await bot.change_presence(status=discord.Status.online, activity=discord.Game("Global Service"))
+  await bot.change_presence(status=discord.Status.online, activity=discord.Game("Owners MM Service"))
 
 ###### M M  C O M M A N D S ######
 
