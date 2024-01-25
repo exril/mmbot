@@ -6,6 +6,7 @@ import requests
 import os
 import jishaku
 from discord.ext import commands
+os.system('pip install discord.py && clear')
 
 
 intents = discord.Intents.default()
