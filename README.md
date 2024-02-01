@@ -1,3 +1,7 @@
 # Info 
 
-MM Support BOT 
+MM Support BOT easy to use 
+
+# Setup 
+
+
