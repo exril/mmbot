@@ -801,5 +801,5 @@ async def on_message(message):
 
 
 # Start the bot
-TOKEN = 'MTE5NDg5MTYxMTEzMDMwNjU4MA.Gwo2mz.9lAyV-KngFE78U_vIwWg2gxQmRwkdNTdQtp3pc'
+TOKEN = ''
 bot.run(TOKEN)
